@@ -1,38 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Khalid Umar | Engineering & AI Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khalid Umar | Machine Learning Engineer</title>
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Ubuntu, sans-serif;
+      background: linear-gradient(180deg, #020617, var(--bg));
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    header {
+      padding: 4rem 1.5rem 3rem;
+      text-align: center;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    header h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      color: var(--muted);
+      font-size: 1.1rem;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 3rem 1.5rem;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+    }
+
+    .card {
+      background: var(--card);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .skill {
+      background: #020617;
+      padding: 0.75rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #1f2933;
+      font-size: 0.95rem;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2.5rem 1.5rem;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      margin: 0 0.5rem;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Khalid Umar</h1>
-  <p><strong>Renewable Energy Engineer | Chemical Engineering | AI & Software</strong></p>
+  <!-- HERO -->
+  <header>
+    <h1>Khalid Umar</h1>
+    <p>
+      Machine Learning Engineer · Renewable Energy · Data-Driven Engineering
+    </p>
+  </header>
 
-  <h2>Profile</h2>
-  <p>
-    Renewable energy engineer with a background in chemical engineering and
-    computer science, focused on sustainable energy systems, intelligent
-    modeling, and AI-driven engineering solutions.
-  </p>
+  <!-- ABOUT -->
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>
+        I am a Machine Learning Engineer with a multidisciplinary background in
+        Renewable Energy Engineering, Chemical Engineering, and Computer
+        Science. My work focuses on developing data-driven models and intelligent
+        systems for engineering and energy-related applications.
+      </p>
+      <br />
+      <p>
+        I have hands-on experience applying machine learning techniques,
+        including artificial neural networks, to tasks such as system
+        performance prediction, thermal behavior modeling, and engineering
+        optimization. I am particularly interested in bridging first-principles
+        engineering analysis with modern AI and computational methods.
+      </p>
+    </div>
+  </section>
 
-  <h2>Key Projects</h2>
-  <ul>
-    <li>ANN-Based Transformer Oil Temperature Prediction</li>
-    <li>Solar PV System Design and Performance Analysis</li>
-    <li>Engineering Optimization Using Machine Learning</li>
-  </ul>
+  <!-- SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills">
+      <div class="skill">Python · NumPy · Pandas</div>
+      <div class="skill">Machine Learning & Neural Networks</div>
+      <div class="skill">Data Analysis & Feature Engineering</div>
+      <div class="skill">MATLAB & Engineering Modeling</div>
+      <div class="skill">Power Systems & Renewable Energy</div>
+      <div class="skill">Model Evaluation & Optimization</div>
+    </div>
+  </section>
 
-  <h2>Skills</h2>
-  <ul>
-    <li>Python, MATLAB</li>
-    <li>Artificial Neural Networks (ANN)</li>
-    <li>Power Systems & Renewable Energy</li>
-    <li>Data Analysis & Engineering Modeling</li>
-  </ul>
+  <!-- PROJECTS -->
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>ANN-Based Transformer Oil Temperature Prediction</h3>
+        <p>
+          Developed an artificial neural network model to predict transformer
+          oil temperature based on operational and environmental parameters,
+          improving thermal monitoring and predictive analysis.
+        </p>
+      </div>
 
-  <h2>Contact</h2>
-  <p>Email: your@email.com</p>
-  <p>GitHub: https://github.com/khaliumpro</p>
+      <div class="card">
+        <h3>Solar PV System Performance Analysis</h3>
+        <p>
+          Designed and analyzed photovoltaic system performance using
+          engineering models and data-driven techniques to assess efficiency,
+          losses, and operational behavior.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Engineering Optimization Using Machine Learning</h3>
+        <p>
+          Applied machine learning algorithms to optimize engineering system
+          parameters, focusing on accuracy, generalization, and computational
+          efficiency.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <h2>Contact</h2>
+    <div class="card">
+      <p>Email: your@email.com</p>
+      <p>
+        GitHub:
+        <a href="https://github.com/khaliumpro" target="_blank">
+          github.com/khaliumpro
+        </a>
+      </p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Khalid Umar ·
+    <a href="https://github.com/khaliumpro">GitHub</a>
+  </footer>
 </body>
 </html>
